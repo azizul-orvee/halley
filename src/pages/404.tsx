@@ -10,7 +10,6 @@ export default function Home() {
         id="faq"
       >
         <h2 className="text-4xl font-bold text-center">404 - Not Found</h2>
-
         <p className="pt-6 pb-16 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
           Im guessing you spelled something wrong. Can you double check that
           URL?

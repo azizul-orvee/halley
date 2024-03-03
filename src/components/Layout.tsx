@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 const Layout = (props: any) => {
@@ -32,6 +33,7 @@ const Layout = (props: any) => {
         {children}
         <Footer />
       </main>
+      <GoogleTagManager gtmId="GTM-5MRL9TVX" />
     </div>
   );
 };
