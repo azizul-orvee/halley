@@ -20,8 +20,8 @@ export function Hero() {
               45-60 mins response time
               </h1>
           <h1 className="pt-6 text-xl font-medium w-auto sm:w-10/12 md:w-10/12">
-          Found upon us during your Google search? Great news! you are now moments away from our mobile tyre fitting service available. <br />{" "} <br />{" "} 
-          Whether you are at home, work, or stranded by the roadside, our solution is designed for your utmost convenience.
+          Found upon us in Google? Great news! you are now moments away from our same day mobile tyre fitting service available. <br />{" "} <br />{" "} 
+          Whether you are at home, work, or stranded by the roadside, our solution is designed for your utmost convenience. WE COME TO YOU.
           </h1>
           <div className="flex flex-auto pt-10 gap-2 min-w-[350px] justify-center sm:justify-start">
             <div>

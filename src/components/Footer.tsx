@@ -18,6 +18,15 @@ export default function Footer() {
   const bgClasses = [
     'bg-amber-400',
     'bg-amber-500',// Add more as needed
+    'bg-amber-200',// Add more as needed
+    'bg-amber-300',// Add more as needed
+  ];
+
+  const fillColors = [
+    '#000', 
+    '#fff', 
+    '#000', 
+    '#fff', 
   ];
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
@@ -26,7 +35,7 @@ export default function Footer() {
     // Change the background class every 1000ms (1 second)
     const intervalId = setInterval(() => {
       setCurrentBgIndex((currentBgIndex) => (currentBgIndex + 1) % bgClasses.length);
-    }, 100); // Adjust time as needed
+    }, 1500); // Adjust time as needed
 
     // Clear the interval on component unmount
     return () => clearInterval(intervalId);
@@ -42,7 +51,7 @@ export default function Footer() {
             <a href={phoneLink}>
             <div className={`px-6 py-1 ${bgClasses[currentBgIndex]} rounded-lg shadow-md cursor-pointer flex items-center gap-1 justify-center`}>
               <div className="icon-container custom-ping-animation">
-                <IoMdCall size={50} style={{ fill: "#000" }} />
+                <IoMdCall size={50} style={{ fill: fillColors[currentBgIndex] }} />
               </div>
               <div className="">
                 
