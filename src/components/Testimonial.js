@@ -7,20 +7,20 @@ export function Testimonial() {
   const testimonials = [
     {
       quote:
-        "I was stuck on the motorway with a flat tyre, feeling quite stressed about the situation. I called Azanate emergency mobile tyre fitting service, and they were incredible! They arrived quickly, had me back on the road in no time, and to my surprise, the price was the best I've found. Truly a lifesaver",
-      name: "Micheal Gough",
+        "Stranded on the motorway with a flat tyre, I experienced prompt and exceptional service from Moon emergency mobile tyre fitting, which not only had me back on the road swiftly but also offered the best price I've encountered. Their service was truly a lifesaver in a stressful situation.",
+      name: "Katherine Lee",
       title: "London",
     },
     {
       quote:
-        "When I found myself stranded with a tyre issue, I wasn't sure what to do next. Thankfully, I reached out to this team, and they were nothing short of amazing. Not only did they offer a very competitive price, but their friendliness and efficiency made a stressful situation much easier. Highly recommend!",
-      name: "Alex B.",
+        "I was fortunate to contact this team, whose assistance was absolutely incredible. They provided not only an exceptionally competitive rate but also their efficiency and warmth greatly alleviated my stress. I highly recommend their services!",
+      name: "Claire Jarvis",
       title: "Manchester",
     },
     {
       quote:
-        "I never thought getting a tyre replaced could be such a hassle-free experience until I needed help on a busy day. This 24 hour mobile tyre fitting service came to my rescue. Their team was super friendly, the service was fast, and the price was unbeatable. I'm definitely keeping their number for any future tyre troubles!",
-      name: "John Smith",
+        "I didn't imagine that replacing a tyre could be so effortless until I found myself in need of assistance on a hectic day. The 24-hour mobile tyre fitting service was a lifesaver, offering swift, friendly service at an unbeatable price. Their contact is firmly saved for any tyre issues in the future!",
+      name: "Maisie Bolt",
       title: "Birmingham",
     },
   ];
@@ -36,9 +36,9 @@ export function Testimonial() {
     arrows: false,
   };
   return (
-    <section className="bg-white mt-6 mb-12">
+    <section className="bg-white mb-12">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-      <h2 className="text-3xl text-gray-900 mb-8 font-semibold tracking-wide uppercase">
+      <h2 className="text-4xl font-bold text-center mb-6">
             Testimonials
           </h2>
         <Slider {...settings}>
@@ -51,7 +51,7 @@ export function Testimonial() {
               </blockquote>
               <figcaption className="">
                 <div className="">
-                  <div className="">
+                  <div className="mt-2">
                     {testimonial.name}
                   </div>
                   <div className="">

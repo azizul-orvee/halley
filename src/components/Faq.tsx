@@ -3,24 +3,24 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const faqitems = [
   {
-    question: "What is your refund policy?",
+    question: "Can I get a quote for tyre fitting?",
     response:
-      "If youre unhappy with your purchase for any reason, email us within 90 days and well refund you in full, no questions asked.",
+      "To receive a quote for your tyre fitting needs, please contact us directly via phone or message. Our prices vary depending on factors such as your location and our current availability. Our team will be happy to provide you with all the information you need to make an informed decision.",
   },
   {
-    question: "Do you offer technical support?",
+    question: "What types of tyres do you offer?",
     response:
-      "No, we dont offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "We specialize in providing mid-range tyres that offer a balance of performance and value. If you have a specific brand or type of tyre in mind, please let us know, and we will do our best to accommodate your request based on our current stock and availability.",
   },
   {
-    question: "What is your refund policy? If youre unhappy with your purchase for any reasonIf youre unhappy with your purchase for any reasonIf youre unhappy with your purchase for any reason",
+    question: "Do you offer emergency mobile tyre fitting service?",
     response:
-      "If youre unhappy with your purchase for any reason, email us within 90 days and well refund you in full, no questions asked.",
+      "We do. Please let one off our team know its a emergency and the booking will be treated as priority.",
   },
   {
-    question: "What forms of payment do you accept?",
+    question: "What payment methods do you accept?",
     response:
-      "You can use any debit or credit card to pay for a subscription. We secure your card details and process payments via Stripe. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "For your convenience, we accept several payment methods, including card payments, bank transfers, and cash. Please choose the option that works best for you when booking our services. If you have any questions regarding payment, feel free to contact us for more information.",
   },
 ];
 
@@ -33,11 +33,6 @@ export default function Faq() {
       <h2 className="text-4xl font-bold text-center">
         Frequently Asked Questions
       </h2>
-
-      <p className="pt-6 pb-16 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </p>
       <div className="mx-auto w-full max-w-2xl rounded-2xl bg-transparent dark:bg-transparent">
         {faqitems.map(({ question, response }) => (
           <div key={question}>

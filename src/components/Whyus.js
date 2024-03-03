@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const why = [
     {
-      title: "Swift 40-minute average response time across the UK.",
+      title: "Swift 40-minute average response time for mobile tyre fitting across the UK.",
       image: "/images/whyus/why.svg",
       alt: "Mobile tyre fitting",
     },
     {
-        title: "Most affordable prices for premium quality tyres.",
+        title: "Most affordable prices for mobile tyre fitting with premium quality tyres.",
         image: "/images/whyus/why.svg",
         alt: "Emergency mobile tyre fitting",
       },
@@ -17,7 +17,7 @@ const why = [
         alt: "Same day tyre fitting",
       },
       {
-        title: "Our technicians provide expert tyre fitting with a focus on safety and quality.",
+        title: "Our expert mobile tyre fitters provide services with a focus on safety and quality.",
         image: "/images/whyus/why.svg",
         alt: "Tyre Service",
       },
@@ -40,7 +40,7 @@ export function Whyus() {
     {why.map(({ title, image, alt }, index) => (
   <div key={title}>
     <div className={`flex justify-center items-center ${index % 2 === 0 ? 'bg-white' : 'bg-gray-100'}`}>
-      <div className="text-lg text-center m-2 font-mono">{title}</div>
+      <div className="text-lg text-center m-2 font-mono px-4">{title}</div>
     </div>
   </div>
 ))}

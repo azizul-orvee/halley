@@ -4,12 +4,16 @@ import { useEffect, useState } from "react";
 import { IoMdCall } from "react-icons/io";
 
 const column3 = [
-  { name: "Privacy Policy", href: "/privacy" },
-  { name: "Terms of Service", href: "/terms" },
-  { name: "Refund Policy", href: "/refund" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
+  { name: "Terms of Service", href: "/terms-and-conditions" },
+  { name: "Refund Policy", href: "/refund-policy" },
 ];
 
 export default function Footer() {
+
+  const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER;
+  const phoneLink = process.env.NEXT_PUBLIC_PHONE_LINK;
+
 
   const bgClasses = [
     'bg-amber-400',
@@ -35,14 +39,14 @@ export default function Footer() {
           className={`md:hidden w-full py-2 text-black fixed bottom-0`}
         >
           <div className="flex justify-evenly items-center">
-            <a href='tel:03300432940'>
+            <a href={phoneLink}>
             <div className={`px-6 py-1 ${bgClasses[currentBgIndex]} rounded-lg shadow-md cursor-pointer flex items-center gap-1 justify-center`}>
               <div className="icon-container custom-ping-animation">
                 <IoMdCall size={50} style={{ fill: "#000" }} />
               </div>
               <div className="">
                 
-                <p className="font-bold text-xl tracking-wider">07835 363565</p>
+                <p className="font-bold text-xl tracking-wider">{phoneNumber}</p>
                 <p className="text-center text-xs">We are available now</p>
               </div>
             </div>

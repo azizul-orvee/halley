@@ -4,12 +4,24 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { IoMdCall } from "react-icons/io";
-
+import { Menu } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Services", href: "#services", current: false },
   { name: "FAQ", href: "#faq", current: false },
+  { name: "Mobile Tyre Fitters", href: "/mobile-tyre-fitters", current: false, desk:false },
+  { name: "Emergency Mobile Tyre Fitting", href: "/emergency-mobile-tyre-fitting", current: false, desk:false },
+  { name: "Mobile Tyre Fitting", href: "/mobile-tyre-fitting", current: false, desk:false },
+  { name: "Emergency Tyre Replacement", href: "/emergency-tyre-replacement", current: false, desk:false },
+];
+
+const tyreServices = [
+  { name: "Mobile Tyre Fitters", href: "/mobile-tyre-fitters", current: false },
+  { name: "Emergency Mobile Tyre Fitting", href: "/emergency-mobile-tyre-fitting", current: false },
+  { name: "Mobile Tyre Fitting", href: "/mobile-tyre-fitting", current: false },
+  { name: "Emergency Tyre Replacement", href: "/emergency-tyre-replacement", current: false },
 ];
 
 function classNames(...classes: any) {
@@ -43,14 +55,14 @@ export default function Navbar() {
 
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-5 items-center">
-                    {navigation.map((item) => (
+                  {navigation.filter(item => item.desk !== false).map((item) => (
                       <Link
                         key={item.name}
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-neutral-900 dark:text-neutral-400 "
-                            : "text-neutral-900 dark:text-neutral-400 hover:underline",
+                            ? "text-neutral-900"
+                            : "text-neutral-900 hover:underline",
                           "text-base font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -61,6 +73,26 @@ export default function Navbar() {
                   </div>
                 </div>
 
+                <Menu as="div" className="relative hidden sm:ml-6 sm:block">
+                <Menu.Button className="flex space-x-5 items-center text-base font-medium">
+                  Tyre Services <ChevronDownIcon className="ml-2 w-5 h-5" />
+                </Menu.Button>
+                <Menu.Items className="absolute z-10 mt-2 w-48 origin-top-right rounded-md shadow-lg bg-white dark:bg-neutral-900 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <div className="py-1">
+                    {tyreServices.map((service) => (
+                      <Menu.Item key={service.name}>
+                        {({ active }) => (
+                          <Link href={service.href}>
+                            <div className={classNames(active ? 'bg-gray-100 dark:bg-neutral-700' : '', 'block px-4 py-2 text-sm text-neutral-900 dark:text-neutral-400')}>
+                              {service.name}
+                            </div>
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    ))}
+                  </div>
+                </Menu.Items>
+              </Menu>
                 <div className="absolute inset-y-0 right-10 sm:right-0 flex items-center gap-2">
                   <Link
                     href="tel:07835363565"
@@ -98,8 +130,8 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "text-neutral-900 dark:text-neutral-400"
-                      : "text-neutral-900 dark:text-neutral-400",
+                      ? "text-neutral-900 "
+                      : "text-neutral-900",
                     "block py-4 text-base font-medium border-b border-neutral-200 dark:border-neutral-700"
                   )}
                   aria-current={item.current ? "page" : undefined}
