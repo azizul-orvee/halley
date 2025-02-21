@@ -9,7 +9,7 @@ const Layout = (props: any) => {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Moon Tyre",
+    title: "SylAuto Tyre",
     description: `We provide mobile tyre fitting service in the UK`,
     image: "/images/seo/halley-banner.png",
     type: "website",

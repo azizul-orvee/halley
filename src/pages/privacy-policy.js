@@ -5,9 +5,9 @@ const privacy = () => {
   return (
     <Layout>
     <div className="bg-white text-gray-800 container p-10 mt-16">
-        <h1 className="text-2xl font-bold mb-4">Privacy Policy for Moon Tyre Fitting</h1>
+        <h1 className="text-2xl font-bold mb-4">Privacy Policy for SylAuto Tyre Fitting</h1>
         <p className="mb-2">Last Updated: 2024</p>
-        <p className="mb-4">At Moon Tyre Fitting, accessible from www.Moon Tyre Fitting.co.uk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Moon Tyre Fitting and how we use it.</p>
+        <p className="mb-4">At SylAuto Tyre Fitting, accessible from www.SylAuto Tyre Fitting.co.uk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by SylAuto Tyre Fitting and how we use it.</p>
         <p className="mb-4">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
         
         <h2 className="text-xl font-semibold mb-2">Consent</h2>

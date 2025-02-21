@@ -11,8 +11,8 @@ const refund = () => {
     <Layout>
     <Navbar />
       <div className="bg-white text-gray-800 container p-10 mt-16">
-        <h1 className="text-2xl font-bold mb-4">Refund Policy for Moon Tyres</h1>
-        <p className="mb-4">At Moon Tyres, we are committed to providing you with exceptional service and quality. We understand that sometimes things do not go as planned, and we are here to help ensure your satisfaction. Here is our easy refund policy, designed with you in mind:</p>
+        <h1 className="text-2xl font-bold mb-4">Refund Policy for SylAuto Tyres</h1>
+        <p className="mb-4">At SylAuto Tyres, we are committed to providing you with exceptional service and quality. We understand that sometimes things do not go as planned, and we are here to help ensure your satisfaction. Here is our easy refund policy, designed with you in mind:</p>
 
         <h2 className="text-xl font-semibold mb-2">Delays in Service</h2>
         <p className="mb-4">We aim to be punctual and efficient with our mobile tyre fitting service. However, please understand that delays may occasionally occur due to traffic congestion, adverse weather conditions, or other unforeseen road circumstances. In such cases, we appreciate your patience and understanding that refunds cannot be issued for delays caused by these external factors.</p>
