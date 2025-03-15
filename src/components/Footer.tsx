@@ -90,7 +90,7 @@ export default function Footer() {
             <div className="mb-1">Please contact us now to check availability</div>
             <div className="underline">
               <Link href='tel:07367195680'>
-              07835 363565
+              07367195680
               </Link>
             </div>
           </div>

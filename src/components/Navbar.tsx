@@ -95,12 +95,12 @@ export default function Navbar() {
               </Menu>
                 <div className="absolute inset-y-0 right-10 sm:right-0 flex items-center gap-2">
                   <Link
-                    href="tel:07835363565"
+                    href="tel:07367195680"
                     target="_blank"
                     className="hidden sm:block"
                   >
                     <button className="bg-amber-400 text-black px-4 p-2 text-base font-medium  rounded-full">
-                      07835 363565
+                     07367 195680
                     </button>
                   </Link>
 
@@ -143,7 +143,7 @@ export default function Navbar() {
     
                 <button className="flex items-center justify-center mt-12 bg-amber-400 text-black px-4 p-3 font-bold text-lg rounded-full w-full">
                 <IoMdCall className="animate-ping" size={30} />
-                 <span className="px-2">07835 363565</span>
+                 <span className="px-2">07367 195680</span>
                 </button>
               </Link>
             </div>
