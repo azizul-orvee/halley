@@ -33,7 +33,7 @@ const Layout = (props: any) => {
         {children}
         <Footer />
       </main>
-      <GoogleTagManager gtmId="GTM-5MRL9TVX" />
+      <GoogleTagManager gtmId="GTM-MDNNL76B" />
     </div>
   );
 };
