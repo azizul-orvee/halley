@@ -139,7 +139,7 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <Link href="tel:07835363565" target="_blank">
+              <Link href="tel:07367195680" target="_blank">
     
                 <button className="flex items-center justify-center mt-12 bg-amber-400 text-black px-4 p-3 font-bold text-lg rounded-full w-full">
                 <IoMdCall className="animate-ping" size={30} />
